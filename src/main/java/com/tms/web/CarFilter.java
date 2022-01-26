@@ -15,7 +15,6 @@ public class CarFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String value = servletRequest.getParameter("value");
         String method = ((HttpServletRequest) servletRequest).getMethod();
-
         if (value.equals("")) {
             if (method.equals("GET")) {
                 filterChain.doFilter(servletRequest, servletResponse);

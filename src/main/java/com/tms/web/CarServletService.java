@@ -37,7 +37,6 @@ public class CarServletService extends HttpServlet {
             Car car = carMap.get(id);
             writer.println(car);
         }
-
         Date date = new Date();
         Cookie cookie = new Cookie("cookieDate", DateFormatUtils.format(date, "hh-mm-ss"));
         resp.addCookie(cookie);

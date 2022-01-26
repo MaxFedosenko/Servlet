@@ -11,6 +11,7 @@ public class CarListener implements ServletRequestListener, HttpSessionListener 
         System.out.println("request was destroyed");
     }
 
+
     @Override
     public void requestInitialized(ServletRequestEvent servletRequestEvent) {
         System.out.println("request was initialized");
